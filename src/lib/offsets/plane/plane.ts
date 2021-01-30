@@ -188,4 +188,13 @@ export const plane: OffsetList = {
     type: Type.Int32,
     permission: 'r',
   }),
+  atcTypeCode: new Offset({
+    value: 0x3160,
+    name: 'atcTypeCode',
+    length: 256,
+    category: OffsetCategory.PLANE,
+    description: 'ATC aircraft type string',
+    type: Type.String,
+    permission: 'r',
+  })
 };
