@@ -1,6 +1,6 @@
 {
-  "name": "@fsuipc/api",
-  "version": "0.4.0",
+  "name": "@flusinerd/msfs-api",
+  "version": "0.4.1",
   "author": {
     "name": "FSUIPC-Node Opensource Team",
     "url": "https://github.com/fsuipc-node"
@@ -19,7 +19,7 @@
     "compile:dev": "tsc --declaration -p src/tsconfig.app.json",
     "compile:prod": "tsc --declaration -p src/tsconfig.prod.json",
     "postcompile:dev": "npx tscpaths -v -r -p src/tsconfig.app.json -s ./dist",
-    "postcompile:prod": "npx tscpaths -v -r -p src/tsconfig.prod.json -s ./dist && yarn copy:docs && yarn copy:package",
+    "postcompile:prod": "npx tscpaths -v -r -p src/tsconfig.prod.json -s ./dist && yarn copy:package",
     "copy:docs": "cp README.md LICENSE dist/",
     "copy:package": "node scripts/clean-pkg",
     "test": "jest --watch",
