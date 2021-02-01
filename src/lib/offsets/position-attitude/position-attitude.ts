@@ -255,4 +255,13 @@ export const positionAttitude: OffsetList = {
     type: Type.UInt16,
     permission: 'r',
   }),
+  radioAlt: new Offset({
+    value: 0x31E4,
+    name: 'radioAlt',
+    category: OffsetCategory.POSITION_ATTITUDE,
+    description: 'radio altitude ',
+    convert: '+({VAL} * 65536 * 3.28084).toFixed(2)',
+    type: Type.Int32,
+    permission: 'r',
+  }),
 };
